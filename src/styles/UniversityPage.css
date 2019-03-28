@@ -1,0 +1,38 @@
+.university-page {
+    /* font-size: 20px; */
+}
+
+.university-page__title {
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.university-page__el {
+    padding: 7px 0;
+}
+
+.university-page__el--icon {
+    font-size: 22px;
+}
+
+.university-page__subtitle {
+    font-size: 24px;
+    padding: 20px 0 10px;
+}
+
+.university-page__list {
+    list-style: none;
+}
+
+.university-page__list--el {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    line-height: 150%;
+}
+
+.university-page__list--el:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}

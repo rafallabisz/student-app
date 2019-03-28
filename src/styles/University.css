@@ -1,0 +1,24 @@
+.university-title {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.university {
+    list-style: none;
+
+}
+
+/* .university__li {} */
+
+.university__li--el {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    line-height: 150%;
+}
+
+.university__li--el:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}

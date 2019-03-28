@@ -1,0 +1,463 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "Contest bee2code",
+    "contact": {
+      "email": "biuro@bee2code.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get universities",
+        "operationId": "getUniversities",
+        "responses": {
+          "200": {
+            "description": "Correct request",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/University"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "University": [{
+        "id": "1",
+        "name": "Politechnika Śląska",
+        "address": "Gliwice",
+        "email": "polsl@.pl",
+        "phone": "500 500 400",
+        "ref": "/polsl",
+        "fields": ["informatics", "automatics", "electronics"]
+      },
+      {
+        "id": "2",
+        "name": "Politechnika Wrocławska",
+        "address": "Wroclaw",
+        "email": "wroclaw@.pl",
+        "phone": "500 500 200",
+        "ref": "/wroclaw",
+        "fields": ["architecture", "chemistry", "transport"]
+      },
+      {
+        "id": "3",
+        "name": "Politechnika Warszawska",
+        "address": "Warszawa",
+        "email": "warsaw@.pl",
+        "phone": "500 500 100",
+        "ref": "/warsaw",
+        "fields": ["mechatronics", "biotechnology", "mathematics"]
+      }
+    ],
+    "FieldOfStudy": {
+      "polsl": [{
+          "universityId": "1",
+          "path": "/informatics",
+          "nameOfStudyField": "Informatyka",
+          "startDate": "01-10-2020",
+          "studentsLimit": "200",
+          "grade": "90 points"
+        },
+        {
+          "universityId": "2",
+          "path": "/automatics",
+          "nameOfStudyField": "Automatyka i Robotyka",
+          "startDate": "01-10-2020",
+          "studentsLimit": "180",
+          "grade": "85 points"
+
+        },
+        {
+          "universityId": "3",
+          "path": "/electronics",
+          "nameOfStudyField": "Elektronika",
+          "startDate": "01-10-2020",
+          "studentsLimit": "90",
+          "grade": "60 points"
+
+        }
+      ],
+      "wroclaw": [{
+          "universityId": "1",
+          "path": "/architecture",
+          "nameOfStudyField": "Architektura",
+          "startDate": "01-10-2020",
+          "studentsLimit": "200",
+          "grade": "90 points"
+        },
+        {
+          "universityId": "2",
+          "path": "/chemistry",
+          "nameOfStudyField": "Chemia",
+          "startDate": "01-10-2020",
+          "studentsLimit": "180",
+          "grade": "85 points"
+
+        },
+        {
+          "universityId": "3",
+          "path": "/transport",
+          "nameOfStudyField": "Transport",
+          "startDate": "01-10-2020",
+          "studentsLimit": "90",
+          "grade": "60 points"
+
+        }
+      ],
+      "warsaw": [{
+          "universityId": "1",
+          "path": "/mechatronics",
+          "nameOfStudyField": "Mechatronika",
+          "startDate": "01-10-2020",
+          "studentsLimit": "200",
+          "grade": "90 points"
+        },
+        {
+          "universityId": "2",
+          "path": "/biotechnology",
+          "nameOfStudyField": "Biotechnologia",
+          "startDate": "01-10-2020",
+          "studentsLimit": "180",
+          "grade": "85 points"
+
+        },
+        {
+          "universityId": "3",
+          "path": "/mathematics",
+          "nameOfStudyField": "Matematyka",
+          "startDate": "01-10-2020",
+          "studentsLimit": "90",
+          "grade": "60 points"
+
+        }
+      ]
+    },
+    "Student": {
+      "polsl": {
+        "informatics": [{
+            "id": "1",
+            "firstName": "Jan",
+            "lastName": "Kowalski",
+            "email": "jankowalski@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "active",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Adam",
+            "lastName": "Nowak",
+            "email": "adamnowak@gmail.com",
+            "phone": "257 705 740",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "3.8"
+          },
+          {
+            "id": "3",
+            "firstName": "Grzegorz",
+            "lastName": "Grzesik",
+            "email": "grzegorzgrzesik@gmail.com",
+            "phone": "600 777 888",
+            "age": "19",
+            "gender": "male",
+            "studentStatus": "active",
+            "averageGrade": "3.5"
+          }
+        ],
+        "automatics": [{
+            "id": "1",
+            "firstName": "Rafal",
+            "lastName": "Mosiolek",
+            "email": "rafalmosiolek@gmail.com",
+            "phone": "300 755 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Adam",
+            "lastName": "Wymoczek",
+            "email": "adamwymoczek@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "dean's leave",
+            "averageGrade": "4.5"
+          },
+          {
+            "id": "3",
+            "firstName": "Monika",
+            "lastName": "Maciejek",
+            "email": "monikamaciejek@gmail.com",
+            "phone": "600 556 866",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.1"
+          }
+        ],
+        "electronics": [{
+            "id": "1",
+            "firstName": "Jan",
+            "lastName": "Kokoszka",
+            "email": "jankokoszka@gmail.com",
+            "phone": "605 758 888",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Robel",
+            "lastName": "Niejaki",
+            "email": "robertniejaki@gmail.com",
+            "phone": "600 755 999",
+            "age": "20",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "3",
+            "firstName": "Joanna",
+            "lastName": "Siwek",
+            "email": "joannasiwek@gmail.com",
+            "phone": "325 458 700",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.2"
+          }
+        ]
+      },
+      "wroclaw": {
+        "architecture": [{
+            "id": "1",
+            "firstName": "Kasia",
+            "lastName": "Swoboda",
+            "email": "kasiaswoboda@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Dominika",
+            "lastName": "Teraz",
+            "email": "dominikateraz@gmail.com",
+            "phone": "257 705 740",
+            "age": "20",
+            "gender": "fmale",
+            "studentStatus": "active",
+            "averageGrade": "4.8"
+          },
+          {
+            "id": "3",
+            "firstName": "Dawid",
+            "lastName": "Rudy",
+            "email": "dawidrudy@gmail.com",
+            "phone": "600 777 888",
+            "age": "23",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "3.3"
+          }
+        ],
+        "chemistry": [{
+            "id": "1",
+            "firstName": "Rafal",
+            "lastName": "Jackowski",
+            "email": "rafaljackowski@gmail.com",
+            "phone": "300 755 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "3.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Adam",
+            "lastName": "Lipski",
+            "email": "adamlipski@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "dean's leave",
+            "averageGrade": "3.5"
+          },
+          {
+            "id": "3",
+            "firstName": "Anita",
+            "lastName": "Majcher",
+            "email": "anitamajcher@gmail.com",
+            "phone": "600 556 866",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.3"
+          }
+        ],
+        "transport": [{
+            "id": "1",
+            "firstName": "Jan",
+            "lastName": "Kogut",
+            "email": "jankogut@gmail.com",
+            "phone": "605 758 888",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "3.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Robel",
+            "lastName": "Wencel",
+            "email": "robertwencel@gmail.com",
+            "phone": "600 755 999",
+            "age": "20",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "3",
+            "firstName": "Natalia",
+            "lastName": "Kosiek",
+            "email": "nataliakosiek@gmail.com",
+            "phone": "325 458 700",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.4"
+          }
+        ]
+      },
+      "warsaw": {
+        "mechatronics": [{
+            "id": "1",
+            "firstName": "Szymon",
+            "lastName": "Kupok",
+            "email": "szymonkupok@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "active",
+            "averageGrade": "3.7"
+          },
+          {
+            "id": "2",
+            "firstName": "Filip",
+            "lastName": "Fipinski",
+            "email": "filipfipinski@gmail.com",
+            "phone": "257 705 740",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "3.8"
+          },
+          {
+            "id": "3",
+            "firstName": "Tomasz",
+            "lastName": "Esnar",
+            "email": "tomaszesnar@gmail.com",
+            "phone": "600 777 888",
+            "age": "19",
+            "gender": "male",
+            "studentStatus": "active",
+            "averageGrade": "3.8"
+          }
+        ],
+        "biotechnology": [{
+            "id": "1",
+            "firstName": "Rafal",
+            "lastName": "Kebsiolek",
+            "email": "rafalkebsiolek@gmail.com",
+            "phone": "300 755 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "inactive",
+            "averageGrade": "4.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Jakub",
+            "lastName": "Jagoda",
+            "email": "jakubjagoda@gmail.com",
+            "phone": "600 700 800",
+            "age": "21",
+            "gender": "male",
+            "studentStatus": "dean's leave",
+            "averageGrade": "4.3"
+          },
+          {
+            "id": "3",
+            "firstName": "Justyna",
+            "lastName": "Stach",
+            "email": "justynastach@gmail.com",
+            "phone": "600 556 866",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.2"
+          }
+        ],
+        "mathematics": [{
+            "id": "1",
+            "firstName": "Karol",
+            "lastName": "Haduch",
+            "email": "karolhaduch@gmail.com",
+            "phone": "605 758 888",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "3.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Weronika",
+            "lastName": "Niwka",
+            "email": "weronikaniwka@gmail.com",
+            "phone": "600 755 999",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "inactive",
+            "averageGrade": "4.3"
+          },
+          {
+            "id": "3",
+            "firstName": "Adrianna",
+            "lastName": "Galent",
+            "email": "adriannagalent@gmail.com",
+            "phone": "325 458 700",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.6"
+          }
+        ]
+      }
+
+
+    }
+  }
+}

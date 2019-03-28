@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__title {
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.home__item {
+    /* padding: 5px 0; */
+    /* font-size: 20px; */
+    line-height: 150%;
+}
