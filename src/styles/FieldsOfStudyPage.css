@@ -1,15 +1,11 @@
 .fieldsOfStudy {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .fieldsOfStudy__el:nth-child(1) {
     font-size: 24px;
     font-weight: 700;
-    /* padding-bottom: 10px; */
-    /* max-width: 200px; */
-    /* margin: 0 auto; */
 }
 
 .fieldsOfStudy__el {
@@ -19,14 +15,15 @@
 
 .fieldsOfStudy__title {
     margin: 10px 0 5px 0;
+    font-weight: 700;
 }
 
 .fieldsOfStudy__btn {
     padding: 5px 30px;
     width: 100px;
-    margin: 0 auto 20px;
+    margin-left: 10px;
     font-size: 16px;
-    background-color: #0052ea;
+    background-color: #1A72B9;
     border-style: none;
     border-radius: 5px;
     color: #fff;
@@ -34,14 +31,23 @@
 }
 
 .fieldsOfStudy__btn:hover {
-    background-color: #3d7df3;
+    background-color: #0052ea;
     cursor: pointer;
 }
 
-.studentList {
+.fieldsOfStudy__studentList {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    text-align: center;
+}
 
+.fieldsOfStudy__studentList--el {
+    line-height: 140%;
+}
+
+.fieldsOfStudy__studentList--line {
+    height: 3px;
+    width: 80%;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 35%;
+    margin: 5px 0 30px;
 }

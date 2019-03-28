@@ -1,0 +1,24 @@
+.search__input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* box-shadow: 1px 1px 2px -1px rgb(46, 45, 45); */
+    margin: 10px 0;
+}
+
+.search__list {
+    list-style: none;
+}
+
+.search__list--el {
+    line-height: 150%;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+
+.search__list--el:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}

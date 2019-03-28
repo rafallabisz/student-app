@@ -1,10 +1,8 @@
-.university-page {
-    /* font-size: 20px; */
-}
+/* .university-page {} */
 
 .university-page__title {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 700;
     padding-bottom: 10px;
 }
 

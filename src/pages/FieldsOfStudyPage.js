@@ -5,8 +5,8 @@ const FieldsOfStudyPage = (props) => {
 
   const [activeBtn, setActiveBtn] = useState(false);
 
-  const len = `${props.match.params.id.length + 1}`
-  const path = props.match.url.slice(12, -len);
+  const length = `${props.match.params.id.length + 1}`
+  const path = props.match.url.slice(12, -length);
   const idUrl = props.match.params.id;
 
   const handleFieldsOfStudy = () => {
@@ -39,23 +39,25 @@ const FieldsOfStudyPage = (props) => {
   const { nameOfStudyField, startDate, studentsLimit, grade } = props.fieldsOfStudy[path][handleFieldsOfStudy()]
 
   const studentsList = props.student[path][idUrl].map(item => (
-    <div className="studentList" key={item.id}>
-      <span>First name: {item.firstName}</span>
-      <span>Last name: {item.lastName}</span>
+    <div className="fieldsOfStudy__studentList" key={item.id}>
+      <span className="fieldsOfStudy__studentList--el">First name: {item.firstName}</span>
+      <span className="fieldsOfStudy__studentList--el">Last name: {item.lastName}</span>
+      <span className="fieldsOfStudy__studentList--line"></span>
     </div>
 
   ))
 
   const activeViev = props.student[path][idUrl].map(item => (
-    <div className="studentList" key={item.id}>
-      <span>First name: {item.firstName}</span>
-      <span>Last name: {item.lastName}</span>
-      <span>Gender: {item.gender}</span>
-      <span>Age: {item.age}</span>
-      <span>Email: {item.email}</span>
-      <span>Phone: {item.phone}</span>
-      <span>Average grade: {item.averageGrade}</span>
-      <span>Student status: {item.studentStatus}</span>
+    <div className="fieldsOfStudy__studentList" key={item.id}>
+      <span className="fieldsOfStudy__studentList--el">First name: {item.firstName}</span>
+      <span className="fieldsOfStudy__studentList--el">Last name: {item.lastName}</span>
+      <span className="fieldsOfStudy__studentList--el">Gender: {item.gender}</span>
+      <span className="fieldsOfStudy__studentList--el">Age: {item.age}</span>
+      <span className="fieldsOfStudy__studentList--el">Email: {item.email}</span>
+      <span className="fieldsOfStudy__studentList--el">Phone: {item.phone}</span>
+      <span className="fieldsOfStudy__studentList--el">Average grade: {item.averageGrade}</span>
+      <span className="fieldsOfStudy__studentList--el">Student status: {item.studentStatus}</span>
+      <span className="fieldsOfStudy__studentList--line"></span>
     </div>
   ))
 
@@ -68,8 +70,8 @@ const FieldsOfStudyPage = (props) => {
         <span className="fieldsOfStudy__el">Grade: {grade}</span>
 
 
-        <p className="fieldsOfStudy__title">List students:</p>
-        <button className="fieldsOfStudy__btn" onClick={() => setActiveBtn(!activeBtn)}>{activeBtn ? "Less" : "More"}</button>
+        <span className="fieldsOfStudy__title">List students:<button className="fieldsOfStudy__btn" onClick={() => setActiveBtn(!activeBtn)}>{activeBtn ? "Less" : "More"}</button></span>
+
         {!activeBtn && studentsList}
         <div>{activeBtn && <div>{activeViev}</div>}</div>
       </div>

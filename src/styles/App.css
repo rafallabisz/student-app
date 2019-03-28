@@ -8,7 +8,7 @@
     font-family: arial, sans-serif;
     background-color: #F1F2F2;
     min-height: 100vh;
-    /* overflow: hidden; */
+    padding-bottom: 70px;
 }
 
 .header {
@@ -21,16 +21,14 @@
 }
 
 .panel {
-    margin: 30px 25px;
+    margin: 30px 25px 30px;
     background-color: #fff;
     color: rgb(59, 59, 59);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px -2px rgb(46, 45, 45);
     font-size: 20px;
-    /* max-width: 550px; */
-    /* margin: 30px auto; */
-    /* background-color: red; */
+    max-width: 500px;
 }
 
 .navigation {
@@ -39,4 +37,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+@media(min-width:550px) {
+    .panel {
+        margin: 30px auto;
+    }
 }

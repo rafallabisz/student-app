@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     const { isLoaded, university, fieldsOfStudy, student } = this.state;
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="app">
           <header className="header">
             <Header />

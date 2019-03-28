@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import '../styles/Search.css';
+
 class Search extends Component {
   state = {
     value: "",
-    // valueFields: ""
   }
 
   handleSearch = (e) => {
@@ -11,31 +12,23 @@ class Search extends Component {
       value: e.target.value
     })
   }
-  // handleStudent = (e) => {
-  //   this.setState({
-  //     valueFields: e.target.value
-  //   })
-  // }
 
   handleFilterUniversity = () => {
     if (this.state.value) {
       return this.props.university.filter(item => item.name.toLowerCase().includes(this.state.value.toLowerCase())).map(item => (
-        <li key={item.id}><NavLink to={`/university${item.ref}`}>{item.name}</NavLink></li>
+        <li key={item.id}><NavLink className="search__list--el" to={`/university${item.ref}`}>{item.name}</NavLink></li>
       ))
     }
   }
 
 
-
-
   render() {
-    // this.handleFilterStudents()
     return (
 
-      <div>
-        <input type="text" placeholder="Search university" value={this.state.value} onChange={this.handleSearch} />
+      <div className="search">
+        <input className="search__input" type="text" placeholder="Search universities..." value={this.state.value} onChange={this.handleSearch} />
 
-        <ul>{this.handleFilterUniversity()}</ul>
+        <ul className="search__list">{this.handleFilterUniversity()}</ul>
 
       </div>
 
