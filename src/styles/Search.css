@@ -1,3 +1,8 @@
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
 .search__input {
     padding: 5px;
     font-size: 18px;
@@ -5,6 +10,7 @@
     border: 1px solid gray;
     /* box-shadow: 1px 1px 2px -1px rgb(46, 45, 45); */
     margin: 10px 0;
+    max-width: 300px;
 }
 
 .search__list {
@@ -21,4 +27,9 @@
     cursor: pointer;
     text-decoration: underline;
     color: #000;
+}
+
+.search__listFields--el {
+    line-height: 150%;
+    text-transform: capitalize;
 }
