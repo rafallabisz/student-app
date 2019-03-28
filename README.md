@@ -1,3 +1,8 @@
+Student app allows you to find a university, information about fields of study, detailed information about students. Statistics are also displayed on the designed dashboard.
+The application is in development, currently the view adapted to mobile.
+---
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
