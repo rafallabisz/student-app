@@ -58,18 +58,20 @@ class App extends Component {
             <section className="panel">
               <Switch>
                 <Route path="/" exact render={() => (<Home university={university} student={student} isLoaded={isLoaded} />)} />
-                <Route path="/university" exact render={() => (<University university={university} isLoaded={isLoaded} />)} />
+                <Route path="/university" exact render={() => (<University
+                  university={university}
+                  isLoaded={isLoaded} />)} />
                 <Route path="/search" exact render={() => (
                   <Search
                     university={university}
-                    fieldsOfStudy={fieldsOfStudy}
                     isLoaded={isLoaded}
-                    student={student}
                   />)} />
 
                 {university.map(item => (
                   <Route path={`/university${item.ref}`} exact key={item.id} render={() => (
-                    <UniversityPage university={item} fieldsOfStudy={fieldsOfStudy} />)} />
+                    <UniversityPage
+                      university={item}
+                      fieldsOfStudy={fieldsOfStudy} />)} />
                 ))}
 
                 {university.map(item => (
@@ -77,13 +79,10 @@ class App extends Component {
                     <FieldsOfStudyPage
                       fieldsOfStudy={fieldsOfStudy}
                       match={match}
-                      number={item.id}
                       student={student}
-
                     />
                   )}
                   />))}
-
               </Switch>
             </section>
 
@@ -93,7 +92,6 @@ class App extends Component {
           </main>
         </div>
       </Router>
-
     );
   }
 }

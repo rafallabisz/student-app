@@ -3,13 +3,16 @@
     flex-direction: column;
 }
 
+.search__title {
+    padding-bottom: 10px;
+}
+
 .search__input {
     padding: 5px;
     font-size: 18px;
     border-radius: 5px;
     border: 1px solid gray;
-    /* box-shadow: 1px 1px 2px -1px rgb(46, 45, 45); */
-    margin: 10px 0;
+    margin: 0px 0 15px;
     max-width: 300px;
 }
 

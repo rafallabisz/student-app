@@ -35,16 +35,16 @@
     "University": [{
         "id": "1",
         "name": "Politechnika Śląska",
-        "address": "Gliwice",
+        "address": "Gliwice, Akademicka 2A",
         "email": "polsl@.pl",
         "phone": "500 500 400",
         "ref": "/polsl",
-        "fields": ["informatics", "automatics", "electronics"]
+        "fields": ["computer science", "automatics", "electronics"]
       },
       {
         "id": "2",
         "name": "Politechnika Wrocławska",
-        "address": "Wroclaw",
+        "address": "Wroclaw, Akademicka 3B",
         "email": "wroclaw@.pl",
         "phone": "500 500 200",
         "ref": "/wroclaw",
@@ -53,18 +53,18 @@
       {
         "id": "3",
         "name": "Politechnika Warszawska",
-        "address": "Warszawa",
+        "address": "Warszawa, Akademicka 7C",
         "email": "warsaw@.pl",
         "phone": "500 500 100",
         "ref": "/warsaw",
-        "fields": ["mechatronics", "biotechnology", "mathematics"]
+        "fields": ["mechatronics", "biotechnology", "mathematics", "pedagogy"]
       }
     ],
     "FieldOfStudy": {
       "polsl": [{
           "universityId": "1",
           "path": "/informatics",
-          "nameOfStudyField": "Informatyka",
+          "nameOfStudyField": "Computer Science",
           "startDate": "01-10-2020",
           "studentsLimit": "200",
           "grade": "90 points"
@@ -72,7 +72,7 @@
         {
           "universityId": "2",
           "path": "/automatics",
-          "nameOfStudyField": "Automatyka i Robotyka",
+          "nameOfStudyField": "Automatic Control and Robotics",
           "startDate": "01-10-2020",
           "studentsLimit": "180",
           "grade": "85 points"
@@ -81,7 +81,7 @@
         {
           "universityId": "3",
           "path": "/electronics",
-          "nameOfStudyField": "Elektronika",
+          "nameOfStudyField": "Electronics",
           "startDate": "01-10-2020",
           "studentsLimit": "90",
           "grade": "60 points"
@@ -91,7 +91,7 @@
       "wroclaw": [{
           "universityId": "1",
           "path": "/architecture",
-          "nameOfStudyField": "Architektura",
+          "nameOfStudyField": "Architecture",
           "startDate": "01-10-2020",
           "studentsLimit": "200",
           "grade": "90 points"
@@ -99,7 +99,7 @@
         {
           "universityId": "2",
           "path": "/chemistry",
-          "nameOfStudyField": "Chemia",
+          "nameOfStudyField": "Chemistry",
           "startDate": "01-10-2020",
           "studentsLimit": "180",
           "grade": "85 points"
@@ -118,7 +118,7 @@
       "warsaw": [{
           "universityId": "1",
           "path": "/mechatronics",
-          "nameOfStudyField": "Mechatronika",
+          "nameOfStudyField": "Mechatronics",
           "startDate": "01-10-2020",
           "studentsLimit": "200",
           "grade": "90 points"
@@ -126,7 +126,7 @@
         {
           "universityId": "2",
           "path": "/biotechnology",
-          "nameOfStudyField": "Biotechnologia",
+          "nameOfStudyField": "Biotechnology",
           "startDate": "01-10-2020",
           "studentsLimit": "180",
           "grade": "85 points"
@@ -135,10 +135,19 @@
         {
           "universityId": "3",
           "path": "/mathematics",
-          "nameOfStudyField": "Matematyka",
+          "nameOfStudyField": "Mathematics",
           "startDate": "01-10-2020",
           "studentsLimit": "90",
           "grade": "60 points"
+
+        },
+        {
+          "universityId": "4",
+          "path": "/pedagogy",
+          "nameOfStudyField": "Pedagogy",
+          "startDate": "01-10-2020",
+          "studentsLimit": "190",
+          "grade": "20 points"
 
         }
       ]
@@ -245,6 +254,28 @@
             "gender": "female",
             "studentStatus": "active",
             "averageGrade": "4.2"
+          },
+          {
+            "id": "4",
+            "firstName": "Joanna",
+            "lastName": "Zyla",
+            "email": "joannazyla@gmail.com",
+            "phone": "325 458 777",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.0"
+          },
+          {
+            "id": "5",
+            "firstName": "Kasia",
+            "lastName": "Depczak",
+            "email": "kasiadepczak@gmail.com",
+            "phone": "325 458 778",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "suspended",
+            "averageGrade": "3.0"
           }
         ]
       },
@@ -419,6 +450,28 @@
             "gender": "female",
             "studentStatus": "active",
             "averageGrade": "4.2"
+          },
+          {
+            "id": "4",
+            "firstName": "Weronika",
+            "lastName": "Jodla",
+            "email": "weronikajodla@gmail.com",
+            "phone": "600 556 866",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "suspended",
+            "averageGrade": "3.2"
+          },
+          {
+            "id": "5",
+            "firstName": "Maciek",
+            "lastName": "Wawoczny",
+            "email": "maciekwawoczny@gmail.com",
+            "phone": "600 556 866",
+            "age": "20",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "3.4"
           }
         ],
         "mathematics": [{
@@ -453,6 +506,51 @@
             "gender": "female",
             "studentStatus": "active",
             "averageGrade": "4.6"
+          }
+        ],
+        "pedagogy": [{
+            "id": "1",
+            "firstName": "Karol",
+            "lastName": "Haduch",
+            "email": "karolhaduch@gmail.com",
+            "phone": "605 758 888",
+            "age": "22",
+            "gender": "male",
+            "studentStatus": "suspended",
+            "averageGrade": "3.2"
+          },
+          {
+            "id": "2",
+            "firstName": "Weronika",
+            "lastName": "Niwka",
+            "email": "weronikaniwka@gmail.com",
+            "phone": "600 755 999",
+            "age": "20",
+            "gender": "female",
+            "studentStatus": "inactive",
+            "averageGrade": "4.3"
+          },
+          {
+            "id": "3",
+            "firstName": "Adrianna",
+            "lastName": "Galent",
+            "email": "adriannagalent@gmail.com",
+            "phone": "325 458 700",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "active",
+            "averageGrade": "4.6"
+          },
+          {
+            "id": "4",
+            "firstName": "Anita",
+            "lastName": "Barska",
+            "email": "anitabarska@gmail.com",
+            "phone": "325 458 700",
+            "age": "21",
+            "gender": "female",
+            "studentStatus": "inactive",
+            "averageGrade": "3.7"
           }
         ]
       }

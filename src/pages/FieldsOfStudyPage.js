@@ -31,6 +31,7 @@ const FieldsOfStudyPage = (props) => {
         case "mechatronics": return 0;
         case "biotechnology": return 1;
         case "mathematics": return 2;
+        case "pedagogy": return 3
         default: return null
       }
     }

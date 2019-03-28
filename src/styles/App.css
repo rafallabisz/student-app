@@ -21,14 +21,14 @@
 }
 
 .panel {
-    margin: 30px 25px 30px;
+    font-size: 20px;
     background-color: #fff;
     color: rgb(59, 59, 59);
+    max-width: 500px;
+    margin: 30px 25px 30px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px -2px rgb(46, 45, 45);
-    font-size: 20px;
-    max-width: 500px;
 }
 
 .navigation {

@@ -16,15 +16,15 @@ const UniversityPage = (props) => {
         )
     }
 
-
+    const { name, address, email, phone } = props.university;
 
     return (
         <>
             <div className="university-page">
-                <h1 className="university-page__title">{props.university.name}</h1>
-                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="map-marker-alt" /> {props.university.address}</p>
-                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="at" /> {props.university.email}</p>
-                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="phone" /> {props.university.phone}</p>
+                <h1 className="university-page__title">{name}</h1>
+                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="map-marker-alt" /> {address}</p>
+                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="at" /> {email}</p>
+                <p className="university-page__el"><FontAwesomeIcon className="university-page__el--icon" icon="phone" /> {phone}</p>
 
                 <h2 className="university-page__subtitle">Fields of study:</h2>
                 <ul className="university-page__list">

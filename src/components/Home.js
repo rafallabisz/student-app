@@ -5,7 +5,7 @@ const Home = (props) => {
 
   const numberOfAllStudents = () => {
     if (props.isLoaded) {
-      return (Object.keys(props.student.polsl.informatics).length + Object.keys(props.student.polsl.automatics).length + Object.keys(props.student.polsl.electronics).length + Object.keys(props.student.wroclaw.architecture).length + Object.keys(props.student.wroclaw.chemistry).length + Object.keys(props.student.wroclaw.transport).length + + Object.keys(props.student.warsaw.mechatronics).length + Object.keys(props.student.warsaw.biotechnology).length + Object.keys(props.student.warsaw.mathematics).length)
+      return (Object.keys(props.student.polsl.informatics).length + Object.keys(props.student.polsl.automatics).length + Object.keys(props.student.polsl.electronics).length + Object.keys(props.student.wroclaw.architecture).length + Object.keys(props.student.wroclaw.chemistry).length + Object.keys(props.student.wroclaw.transport).length + + Object.keys(props.student.warsaw.mechatronics).length + Object.keys(props.student.warsaw.biotechnology).length + Object.keys(props.student.warsaw.mathematics).length + Object.keys(props.student.warsaw.pedagogy).length)
     }
   }
 
